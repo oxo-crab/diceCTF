@@ -39,6 +39,26 @@ in this we have to give 6 chars that we will use and some special characters are
 i tried running find * as it has 6 characters
 this recursively searched all directories and gave:
 
+![image](https://github.com/oxo-crab/diceCTF/blob/main/image.png)
+
+we need more than 6 characters to access it.
+
+Tried killing the job which zsh script forced to remove the check but that didn't work, ultimately decided to turn to zsh man page, found that zsh automatically changes the directory
+without using cd, and can perform automatic file expansion while changing directory so need to type the full name, but that didn't work.
+Found about the use of ` `!:^` charcters to repreat previous commands in history but that didn't work to.
+
+After viewing other writeups, i came to know we had to use [] and ~~
+[] matches any character inside the braces and by putting ~~ in [] it like this `[~~]` it will match with any character not given in the set, so we havd to just do 
+`[~~][~~][~~]/[~~][~~][~~]/[~~][~~][~~][~~][~~][~~][~~][~~]/[~~][~~][~~][~~]/[~~][~~][~~][~~][~~][~~][~~]` and it would run getflag 
+
+Also went through this [video](https://www.youtube.com/watch?v=poHirez8jk4) which is about bypassing the read only enviornment to execute any binary you want to.
+
+
+
+
+
+
+
 
 
 

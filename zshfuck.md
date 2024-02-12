@@ -51,7 +51,7 @@ After viewing other writeups, i came to know we had to use [] and ~~
 [] matches any character inside the braces and by putting ~~ in [] it like this `[~~]` it will match with any character not given in the set, so we havd to just do 
 `[~~][~~][~~]/[~~][~~][~~]/[~~][~~][~~][~~][~~][~~][~~][~~]/[~~][~~][~~][~~]/[~~][~~][~~][~~][~~][~~][~~]` and it would run getflag 
 
-Also went through this [video](https://www.youtube.com/watch?v=poHirez8jk4) which is about bypassing the read only enviornment to execute any binary you want to.
+Also went through this [video](https://www.youtube.com/watch?v=poHirez8jk4)(ddexec/ecverythingexec) which is about bypassing the read only enviornment to execute any binary you want to.
 
 
 
